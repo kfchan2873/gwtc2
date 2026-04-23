@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gwtc-club-site</title>
+
+    <script>
+      (function () {
+        // If we were redirected from 404.html, URL will be /?/<actual-route>
+        var path = window.location.search;
+        if (path.startsWith("?/")) {
+          var newPath = path.slice(1); // remove leading "?"
+          window.history.replaceState(null, "", newPath + window.location.hash);
+        }
+      })();
+    </script>
+    
+
+
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
