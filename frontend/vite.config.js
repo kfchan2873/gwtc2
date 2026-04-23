@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: mode === 'production' ? '/gwtc-club-site/' : '/',
+  base: mode === 'production' ? '/gwtc2/' : '/',
 
   //add this
   server:{
